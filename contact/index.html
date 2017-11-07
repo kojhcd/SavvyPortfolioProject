@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact</title>
 
-   <link rel="stylesheet" type="text/css" href="/theme/style.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+      <link rel="stylesheet" type="text/css" href="/theme/style.css">
+
 </head>
 <body>
 
@@ -30,19 +32,45 @@
 
 
 <div class="content">
-  <h1> Contact : Contact page </h1>
+  <h1> Hey, let's get in contact :D </h1>
 
-
-  <img src="https://drive.google.com/uc?export=view&id=1MWD-7QqIAhi2WQ4HMWUKuPb3Gx90zdea">
+   <img src="https://drive.google.com/uc?export=view&id=1MWD-7QqIAhi2WQ4HMWUKuPb3Gx90zdea">
 
 <div>
   <form action="https://formspree.io/kyleojennings@gmail.com" method="POST">
-  <input type="text" name="firstName">
-    <input type="text" name="lastName">
-    <input type="email" name="email">
-    <input type="password" name="Password">
-  <input type="submit">
-</form>
+        <h2> You would like me to....</h2>
+    <label>
+        <input type="radio" name="subject" value="professional" checked><span> Build you a website!</span>
+        <input type="radio" name="subject" value="personal"><span>create your photography portfolio!</span>
+        <input type="radio" name="subject" value="other"><span>take you out for a fun night of entertainment!</span>
+    </label>
+
+      <input type="text" name="firstname" placeholder="First Name" size="100" autofocus>
+  <input type="text" name="lastname" placeholder="Last Name" size="100">
+  <input type="email" name="userEmail" placeholder="your.email@example.com">
+
+      <input type="checkbox" name="optin" value="trusting" checked>You'd like me to give you a personal call
+      <input type="checkbox" name="optout" value="skeptical" disabled>Your interested in professional services
+
+      <label for="marketing">How did you hear about me?</label>
+      <select name="marketing">
+        <optgroup label="Online">
+          <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+          <option value="github">Online Portfolio (GitHub)</option>
+          <option value="search">Search Engine</option>
+          <option value="email">Email</option>
+        </optgroup>
+        <optgroup label="In-Person">
+          <option value="networking">I helped you change a tire at the auto parts store</option>
+          <option value="referral">You laughed at my joke in the coffee shop</option>
+          <option value="random">We met somewhere else</option>
+        </optgroup>
+        <option value="other">Other</option>
+      </select>
+
+      <textarea name="user_message" rows="8" cols="40"></textarea>
+      <input type="submit">
+    </form>
 </div>
 
 
