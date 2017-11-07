@@ -3,105 +3,70 @@
 
 /* this is the style sheet for all docs in kylejennings */
 
-* {
-border: 2px;
-border-style: solid;
-border-color: red;
-}
-
-html {
-    box-sizing: border-box;
-}
 
 .container {
-  text-align: center;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.container > h2 {
-  font-family: fantasy;
-}
-
-.container > h1 {
-  font-size: 26px;
-  font-family: sans-serif;
-}
-
-.content {
-  background-color: #1a0000;
-  margin: 50px;
-  padding: 50px;
-  padding-left: 50px;
-
+max-width: 750px;
+margin: 10px auto;
 }
 
 .navigation {
-  background-color: #1a0000;
-  position: fixed;
-  top: o;
-  right: 0;
-  width: 100vw;
+padding: 10px;
+background-color: red;
 }
 
 .navigation > ul > li {
-display: inline ;
-margin: 5px;
 position: relative;
+list-style: none;
+display: inline;
+margin: 5px;
 }
 
+.navigation .dropdown {
+position: absolute;
+top: 18px;
+right: -18px;
+padding: 10px;
+display: none;
+}
 
-.navigation . dropdown:hover {
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  display: none;
+.navigation .dropdown li {
+margin: 10px;
+}
+
+.navigation a:hover + .dropdown,
+.dropdown:hover {
+display: block;
 }
 
 .header {
-    background-color: #4d0000;
+padding: 25px;
+background-color: red;
+}
+
+.header h2 {
+color: #2e004d;
+}
+
+.header h2 + h3 {
+color: #2e004d;
+}
+
+
+.content {
+background-color: lightgrey;
+padding: 50px;
 }
 
 .footer {
-  background-color: #cc0000;
+padding: 10px;
+background-color: red;
 }
 
-.jumbotron {
-  margin: auto;
+.extra-pink {
+color: red;
 }
 
-body {
-  display: block;
-  background-color: black;
-  margin: 0px;
-}
-h1 {
-  padding-bottom: 25px;
-  color: red;
-}
-h2 {
-  padding-bottom: 20px;
-  color: red;
-}
-h3 {
-  color: red;
-}
-
-p{
-  color: red;
-}
-
-li {
-  color: red;
-
-}
-
-.funkylist li:hover {
-  background-color: blue;
-}
-
-.contentheader {
-   text-align: center;
-  }
-
-}
+#subheader {
+font-style: italic;
+color: red;
+font-weight: 500;
