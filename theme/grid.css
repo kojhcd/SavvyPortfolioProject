@@ -1,0 +1,51 @@
+
+
+
+#grid {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#grid > div {
+  background-color: ;
+  padding:1em;
+  margin: 0.25em;
+}
+
+#grid > div:first-child {
+  grid-column: 1 / -1;
+
+}
+
+@media (min-width: 415px) {
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+  background-color: blue;
+}
+}
+
+body {
+  background-color: : gray;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+h2 {
+  color: red;
+}
+
+
+/*
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin:0;
+flex-wrap: wrap;
+}
+*/

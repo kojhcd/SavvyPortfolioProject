@@ -4,10 +4,25 @@
 /* this is the style sheet for all docs in kylejennings */
 
 
-.container {
-max-width: 750px;
-margin: 10px auto;
+
+
+/* This is the end of the sane reset ------------------------------------------------ */
+body {
+  background-color: black;
 }
+h2 {
+  color: red;
+}
+
+.navigation .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  flex-wrap: wrap;
+}
+
 
 .navigation {
 padding: 10px;
@@ -43,7 +58,7 @@ padding: 25px;
 background-color: red;
 }
 
-.header h2 {
+.header {
 color: #2e004d;
 }
 
@@ -70,3 +85,9 @@ color: red;
 font-style: italic;
 color: red;
 font-weight: 500;
+}
+
+label {
+  font-size: 26px;
+  color: red;
+}
