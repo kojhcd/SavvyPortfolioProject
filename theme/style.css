@@ -8,7 +8,7 @@
 
 /* This is the end of the sane reset ------------------------------------------------ */
 body {
-  background-color: black;
+  background-color: grey;
 }
 h2 {
   color: red;
@@ -68,7 +68,8 @@ color: #2e004d;
 
 
 .content {
-background-color: lightgrey;
+background-color: black;
+justify-content: center;
 padding: 50px;
 }
 
