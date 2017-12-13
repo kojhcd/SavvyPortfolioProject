@@ -32,9 +32,7 @@ body {
   /* #344583;
   RGB(204,204,204);*/
 }
-h2 {
-  color: red;
-}
+
 /* THIS IS THE END OF FONT / STYLING */
 /* Navigation */
 
@@ -51,7 +49,7 @@ background-color: RGB(168, 189, 217);
   align-items: center;
   margin:0;
   list-style-type: none;
-  ackground-color:  #344583;
+  background-color:
     }
 
  /*.navigation .dropdown {
@@ -73,16 +71,19 @@ display: inline;
 margin: 15px;
 }
 
+.navigation a:hover {
+  background-color: white;
+}
 
 
 .navigation .dropdown li {
 margin: 10px;
 }
 
-.navigation a:hover + .dropdown,
-.dropdown:hover {
+/* .navigation a:hover + .dropdown, .dropdown:hover {
 display: flex;
 }
+*/
 
 /* END Navigation */
 
@@ -161,13 +162,24 @@ background-color: #369;
     border-style: solid;
     border-width: 6px;
     border-color: RGB(73, 144, 219);
-    background-color:
+    background-color:rgb(4, 1, 32);
+}
+
+#content img {
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 #content p {
+  color: RGB(73, 144, 219);
   font-family: sans-serif;
-  text-decoration-color: RGB(73, 144, 219);
-
+  font-size: 48px;
+  text-decoration-color: rgb(4, 1, 32);
+/*  line-height: 1.4;
+  text-indent: 5vw;
+  font-size: 2.54829vmax;
+  font-weight: 500; */
 }
 
  .navbubbles {
@@ -235,12 +247,7 @@ background-color: #369;
   /*#344583; */
 }
 
-#content p {
-  line-height: 1.4;
-  text-indent: 5vw;
-  font-size: 2.54829vmax;
-  font-weight: 500;
-}
+
 
 #content ul {
   font-weight: 500;
