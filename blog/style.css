@@ -1,58 +1,21 @@
+/*
 * {
 border: 2px;
 border-style: solid;
 border-color: red;
 }
 
+rgb(77,160,214)
+rgb(29,34,40)
+rgb(153,34,38)
+
+*/
+
 html {
+  background-color: rgb (77, 160, 214);
     box-sizing: border-box;
 }
 
-.container {
-  text-align: center;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.container>h2 {
-  font-family: fantasy;
-}
-
-.container>h1 {
-  font-size: 26px;
-  font-family: sans-serif;
-}
-.content + img {
-  padding-right: 0px;
-  margin-right: 5px;
-}
-.content {
-  background-color: #1a0000;
-  border: 2px solid red;
-  margin: 50px;
-  padding: 50px;
-  padding-left: 50px;
-  position: absolute;
-}
-
-.navigation {
-  background-color: #1a0000;
-}
-
-.header {
-    background-color: #4d0000;
-}
-
-.footer {
-  background-color: #cc0000;
-}
-
-
-body {
-  display: block;
-  background-color: black;
-  margin: 0px;
-}
 h1 {
   padding-bottom: 25px;
   color: red;
@@ -67,4 +30,78 @@ h3 {
 
 p{
   color: red;
+}
+
+body {
+  display: block;
+  background-color: rgb(29, 32, 39);
+  margin: 0px;
+}
+
+.navigation {
+  width: 100%;
+  float: left;
+  margin:0 0 3em 0
+  padding: 0;
+  list-style: none;
+background-color: rgb(77, 160, 214);
+  border-top: 1 px solid rgb(77, 160, 214);
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: : none;
+  font-weight: bold;
+  color: rgb( 155, 34, 38);
+
+.navigation li a:hover {
+    color: rgb(29, 32, 39);
+    background-color: rgb(77, 160, 214);
+  }
+}
+
+.header {
+    background-color: #4d0000;
+}
+
+
+.container {
+  background-color: rgb(77, 160, 214);
+  text-align: center;
+    /*max-width: 960px;*/
+    margin: 0 auto;
+}
+
+.container > h2 {
+  font-family: fantasy;
+}
+
+.container > h1 {
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+.content + img {
+  padding-right: 0px;
+  margin-right: 5px;
+}
+
+.content {
+  background-color: rgb(29,34,40);
+  border: 2px solid rgb(77, 160, 214);
+  margin: 50px;
+  padding: 50px;
+  padding-left: 50px;
+  position: absolute;
+}
+
+
+
+.footer {
+  background-color: #cc0000;
 }

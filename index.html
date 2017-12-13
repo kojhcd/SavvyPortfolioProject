@@ -2,75 +2,183 @@
 
 <!-- this is the main index file -->
 
+<!--
+classes / ID's to keep track of
+
+.navigation
+.banner
+.splash
+.desktop
+
+.deskbar
+.navbubbles
+ #navreact"
+
+#page-wrap
+#content-wrap
+#content
+
+
+-->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kyles Best Site</title>
+  <title>Kyles Portfolio Introduction</title>
+
 
 <link rel="stylesheet" href="/theme/style.css">
 
 </head>
 
 <body>
-  <div id = "subheader">
-<h1>Welcome! </h1>
-  </div>
 
   <div class="navigation">
-    <ul class="container">
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="/projects">Projects</a>
         <ul class="dropdown">
-          <li><a href="/index.html">Index </a></li>
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li><a href="/media/index.html">Media</a></li>
+           <li><a href="/index.html">KO Design Home</a></li>
+           <li><a href="https://s3.ca-central-1.amazonaws.com/kophotodesign/kophotodesign.html">Photography</a>
+           <li><a href="/index.html">Index </a></li>
+           <!-- <li><a href="/blog/index.html">Blog</a></li> -->
+           <!-- <li><a href="/media/index.html">Media</a></li> -->
            <li><a href="/projects/index.html">Projects</a></li>
-
         </ul>
       </li>
     </ul>
   </div>
+<!-- end Navigation bar -->
 
-<div class= "content"> 
-  <h1 class="extra-pink">Main: V Twin Destruction</h1>
-  <h2 class="extra-red">Ride or Die</h2>
 
-<!--<img src="https://drive.google.com/uc?export=view&id=0B49ZdIwG-YMOZGsxYl9ZTUx1NGs" >
--->
-<img src="https://drive.google.com/uc?export=view&id=1d7qIkhwzDeSU5GsYp10Ht4OujT9HhfHt">
+<div class = "banner">
 
+         <!-- <img src="https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr" alt="banner"> -->
+
+  <!-- <div class = "splash"> -->
+     <div class ="desktop">
+        <ul>
+            <li>
+            <a href="https://github.com/kojhcd" title="github">
+            <span class="ti ti-github">
+            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+            </span></a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/" title = "facebook">  <span class="ti ti-facebook">
+                <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
+              </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/kyleojennings/" title = "linkedin" >
+              <span class="ti ti linkedin">
+              <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+              </span>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="" data-action="contact-form" title="email" alt="email Kyle">
+                <span class="ti ti-email">
+                  <i class="fa fa-envelope-o fa-4x" aria-hidden="true">
+                  </i>
+                </span></a>
+            </li>
+        </ul>
+
+    </div>  <!--DESKTOP -->
+
+
+        <!-- <div class= "splash"-->
+</div>  <!-- banner -->
+<!-- END JUMBOTRON -->
+<div class ="deskbar">
+  <ul class ="navbubbles">
+
+        <li>
+          <div class="navreact">
+                <a href="#" data-action="about-me" title="Kyle's Bio" alt="Kyle's Bio"  input type='button' onclick="newFunc()" id="bio"/>
+                  <div>Bio</div>
+                </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="navreact">
+              <a href="#" data-action="about-me" title="Kyle's Resume" alt="Kyle's Resume" id="resume">
+                <div>Resume</div>
+              </a>
+          </div>
+        </li>
 <!--
-1d7qIkhwzDeSU5GsYp10Ht4OujT9HhfHt
-1o4rF1rXFaeQjrKoB012vZVDvyul4_Jpr
+        <li>
+          <div class="navreact">
+            <a href="#" data-action="about-me" title="Kyle's Blog" alt="Kyle's Blog" id="blog">
+              <div>Blog</div>
+            </a>
+        </div>
+      </li>
+    -->
 
-1K_Dd3NDI31UteAXEYtZSnBeUYC5Iwmx7KA
+      <li>
+          <div class="navreact">
+              <a href="#" data-action="about-me" title="Kyle's Resume" alt="Kyle's Resume" id="Portfolio">
+                  <div>Portfolio</div>
+              </a>
+          </div>
+      </li>
 
-<img src="https://drive.google.com/uc?export=view&id=0B49ZdIwG-YMOYUx2OWF0NkIwek0">
-https://drive.google.com/open?id=1K_Dd3NDI31UteAXEYtZSnBeUYC5Iwmx7KA
+      <li>
+        <a href="#" data-action="contact-form" title="Contact Kyle" alt="Contact Kyle" id="contact">
+              <div>contact</div>
+        </a>
+      </li>
+    </ul>
 
-https://drive.google.com/open?id=15eZzMVQnaMOA5AQwMcDBDgVt6rRhEWETXg
-
--->
-<ul class="funkylist" id="fontstyle">
-  <li>Speed</li>
-  <li>Strength</li>
-  <li>Determination</li>
-</ul>
-
-<ul class="extra-pink" id="fontstyle">
-  <li>No surrender</li>
-  <li>No retreat</li>
-  <li>No driving the speed limit! = DDD</li>
-</ul>
-<!--<img src="https://drive.google.com/uc?export=view&id=15eZzMVQnaMOA5AQwMcDBDgVt6rRhEWETXg">
--->
+  </div>
 </div>
-<script src="/js/greeting.js" charset="utf-8"></script>
+
+
+
+
+<div id= "page-wrap">
+  <div id= "content-wrap">
+    <div id= "content">
+      <img src="https://drive.google.com/uc?export=view&id=0B49ZdIwG-YMOMlY3QjdzWWlnd0E">
+        <div id="intro"></div>
+        <div id="about"></div>
+        <div id="portfolio"></div>
+        <div id="resume"></div>
+        <div id="blog"></div>
+        <div id="contact"></div>
+  </div>
+  </div>
+</div>
+
+<footer>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" charset="utf-8"></script>
+<script src="https://use.fontawesome.com/3c7a3487f8.js"></script>
+<script src="/js/portfolio.js" charset="utf-8"></script>
 
 </script>
 </body>
 
 </html>
+
+<!--
+https://drive.google.com/uc?export=view&id=
+https://drive.google.com/uc?export=view&id=
+https://drive.google.com/uc?export=view&id=
+https://drive.google.com/uc?export=view&id=
+https://drive.google.com/uc?export=view&id=
+https://drive.google.com/uc?export=view&id=
+
+
+small banner
+https://drive.google.com/open?id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr
+-->

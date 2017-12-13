@@ -1,48 +1,79 @@
 
 
-
+/* this is the style sheet for PORTFOLIO PROJECT */
 /* this is the style sheet for all docs in kylejennings */
 
+/* div classes to keep track of
+navigation
+banner
+splash
+desktop
 
+page-wrap
+content-wrap
+content
+*/
 
 
 /* This is the end of the sane reset ------------------------------------------------ */
+
+a, b, body, div, form, h1, h3, h4, i, img, label, li, p, span, ul {
+  -webkit-font-smoothing: antialised;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* experimental code above */
+
 body {
-  background-color: grey;
+  background-color: RGB(168, 189, 217);
+  /* #344583;
+  RGB(204,204,204);*/
 }
 h2 {
   color: red;
 }
+/* THIS IS THE END OF FONT / STYLING */
+/* Navigation */
 
-.navigation .container {
+.navigation {
+padding: 10px;
+background-color:   RGB(168, 189, 217);
+}
+
+.navigation .dropdown {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin:0;
-  flex-wrap: wrap;
-}
+  list-style-type: none;
+  background-color:   color: #344583;
+    }
 
-
-.navigation {
-padding: 10px;
-background-color: red;
-}
-
-.navigation > ul > li {
-position: relative;
-list-style: none;
-display: inline;
-margin: 5px;
-}
-
-.navigation .dropdown {
+ /*.navigation .dropdown {
+list-style-type: none;
 position: absolute;
 top: 18px;
 right: -18px;
 padding: 10px;
 display: none;
+} */
+
+
+.navigation > ul {
+font-family: sans-serif;
+font-size: 2em;
+position: relative;
+list-style: none;
+display: inline;
+margin: 15px;
 }
+
+
 
 .navigation .dropdown li {
 margin: 10px;
@@ -50,45 +81,204 @@ margin: 10px;
 
 .navigation a:hover + .dropdown,
 .dropdown:hover {
-display: block;
+display: flex;
 }
 
-.header {
-padding: 25px;
-background-color: red;
+/* END Navigation */
+
+/* "JUMBOTRON" */
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
+    margin: 0 5px 0 5px;
+    background-size: cover;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    overflow: hidden
+
+  /*
+  background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
+  background-size: cover;
+  width: ;
+  height:;
+  border-style: ridge;
+  border-width: thick;
+  border-color: blue; */
 }
 
-.header {
-color: #2e004d;
+banner > img {
+background-size: contain;
+flex-shrink: 0;
+min-width: 100%;
+min-height: 100%
 }
 
-.header h2 + h3 {
-color: #2e004d;
+banner  .desktop ul li {
+
+}
+
+/* THIS IS THE FA ICONS */
+.desktop {
+}
+
+.desktop > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.desktop > ul > li {
+  display:inline-flex;
+  justify-content: left;
+}
+
+.desktop > ul > li > a {
+  padding: .2em 1em;
+  margin: 10px;
+  }
+
+  .desktop ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
+
+/* END OF FA ICONS */
+/*  END OF "JUMBOTRON"
+   START OF ".deskbar / .navbubbles / #navreact"
+ */
+
+#content {
+    text-align: center;
+    border-style: solid;
+    border-width: 6px;
+    border-color: RGB(73, 144, 219);
+    background-color:
+}
+
+#content p {
+  font-family: sans-serif;
+  text-decoration-color: RGB(73, 144, 219);
+
+}
+
+ .navbubbles {
+   background-color: rgb(4, 1, 32);
+   border-style: solid;
+   border-color: rgb(4, 1, 32);
+     display: table;
+     table-layout: fixed;
+     width: 100%;
+     max-width: 1500px;
+     margin: 0 auto;
+     padding-bottom: 5px;
+     padding-left: 0;
+   }
+
+   .navbubbles li {
+     vertical-align: middle;
+     display: table-cell;
+     font-size: 2.75vw;
+     font-weight: 300;
+   }
+
+
+ .navbubbles li {
+   text-align: center;
+   font-family: Lato,Sans-Serif;
+   color: #fff;
+}
+
+.navreact a,
+.navreact span {
+  color: #344583;
+}
+
+.navreact a:hover {
+color: #fff;
+background-color: #369;
+}
+
+/* End of navbubbles */
+
+#page-wrap{
+  border-color: rgb(4, 1, 32);
+
+}
+
+#content-wrap{
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: .3vw  rgb(4, 1, 32);
+  border-radius: 15px;
+}
+
+#content {
+  padding: 2.5vmax;
 }
 
 
-.content {
-background-color: black;
-justify-content: center;
-padding: 50px;
+#content h4 h3 h2 h1 p {
+  text-align: center;
+  text-decoration-color: #59556a;
+  /*#344583; */
 }
+
+#content p {
+  line-height: 1.4;
+  text-indent: 5vw;
+  font-size: 2.54829vmax;
+  font-weight: 500;
+}
+
+#content ul {
+  font-weight: 500;
+  padding-left: 4vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#content a {
+  border-bottom: .2vw solid;
+}
+
+#content {
+
+}
+
+/*
+#content > div ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#content > div ul li { display: inline; }
+
+#navcontainer > div ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #036;
+}
+
+#content > div ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
+
+*/
 
 .footer {
 padding: 10px;
 background-color: red;
-}
-
-.extra-pink {
-color: red;
-}
-
-#subheader {
-font-style: italic;
-color: red;
-font-weight: 500;
-}
-
-label {
-  font-size: 26px;
-  color: red;
 }
