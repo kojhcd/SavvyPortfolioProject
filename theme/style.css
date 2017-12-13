@@ -40,7 +40,7 @@ h2 {
 
 .navigation {
 padding: 10px;
-background-color:   RGB(168, 189, 217);
+background-color: RGB(168, 189, 217);
 }
 
 .navigation .dropdown {
@@ -51,7 +51,7 @@ background-color:   RGB(168, 189, 217);
   align-items: center;
   margin:0;
   list-style-type: none;
-  background-color:   color: #344583;
+  ackground-color:  #344583;
     }
 
  /*.navigation .dropdown {
@@ -99,6 +99,7 @@ display: flex;
     justify-content: center;
     align-items: left;
     overflow: hidden
+    position: relative;
 
   /*
   background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
@@ -123,6 +124,9 @@ banner  .desktop ul li {
 
 /* THIS IS THE FA ICONS */
 .desktop {
+  position: absolute;
+  left: 10px;
+  top: 140px;
 }
 
 .desktop > ul {
@@ -152,6 +156,7 @@ background-color: #369;
  */
 
 #content {
+  /*  grid-template-columns: 1fr 1fr 1fr; */
     text-align: center;
     border-style: solid;
     border-width: 6px;
