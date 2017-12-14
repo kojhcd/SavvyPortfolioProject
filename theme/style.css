@@ -226,7 +226,11 @@ background-color: #369;
  /*  grid-template-columns: 1fr 1fr 1fr; */
 
 
-
+form {
+  color: RGB(168, 189, 217);
+  font-family: sans-serif;
+  font-size: 36px;
+}
 
 #content {
     text-align: center;
@@ -314,6 +318,15 @@ background-color: #369;
   border-radius: 15px;
 }
 
+
+
+
+
+
+
+
+
+
 #content {
   padding: 2.5vmax;
 }
@@ -361,6 +374,13 @@ background-color: #369;
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+
+
+
+
+
+
 
 
 
