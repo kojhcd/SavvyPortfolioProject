@@ -14,6 +14,15 @@ content-wrap
 content
 */
 
+/* Color scheme
+
+ RGB(73, 144, 219); light blue
+ RGB(168, 189, 217); lightest blue/grey
+ rgb(4, 1, 32); darkest blue/black
+ #fff;
+#369;   mid dark blue
+#344583; mid blue
+RGB(204,204,204); light gray
 
 /* This is the end of the sane reset ------------------------------------------------ */
 
@@ -25,15 +34,72 @@ a, b, body, div, form, h1, h3, h4, i, img, label, li, p, span, ul {
   font: inherit;
   vertical-align: baseline;
 }
-/* experimental code above */
 
 body {
   background-color: RGB(168, 189, 217);
-  /* #344583;
-  RGB(204,204,204);*/
+  /* */
 }
 
 /* THIS IS THE END OF FONT / STYLING */
+/* beginning of experimental menu */
+
+.spotlightmenu{
+width: 100%;
+overflow:hidden;
+background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N')
+}
+
+.spotlightmenu ul{
+background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N')
+margin: 0px;
+padding: 0px;
+font: bold 24px sans-serif; /* font style and size */
+font-decoration-color: red;
+list-style-type: none;
+text-align: justify-all; /* "left", "center", or "right" align menu */
+}
+
+.spotlightmenu li{
+display: inline-flex;
+flex: flex-wrap;
+position:relative;
+padding: 5px;
+margin: 0;
+margin-right: 100px; /* right margin between menu items */
+}
+
+
+.spotlightmenu li a{
+display:inline-block;
+padding: 5px;
+min-width:75px; /* horizontal diameter of spotlight */
+height:75px; /* vertical diameter of spotlight */
+text-decoration: none;
+color: #344583;
+margin: 0 auto;
+overflow:hidden;
+-moz-transition: all 0.5s ease-in-out; /* CSS3 transition to animate all A properties */
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.spotlightmenu li:hover a{
+color: white;
+background:  RGB(73, 144, 219); /* background color of spotlight */
+-webkit-border-radius: 50%; /* large radius to create circular borders */
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+
+.spotlightmenu li a span{
+position:relative;
+top:35%; /* move text down so it appears centered within menu item */
+}
+
+
 /* Navigation */
 
 .navigation {
@@ -99,8 +165,9 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: left;
-    overflow: hidden
+    overflow: hidden;
     position: relative;
+  }
 
   /*
   background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
@@ -110,7 +177,7 @@ display: flex;
   border-style: ridge;
   border-width: thick;
   border-color: blue; */
-}
+
 
 banner > img {
 background-size: contain;
@@ -156,8 +223,12 @@ background-color: #369;
    START OF ".deskbar / .navbubbles / #navreact"
  */
 
+ /*  grid-template-columns: 1fr 1fr 1fr; */
+
+
+
+
 #content {
-  /*  grid-template-columns: 1fr 1fr 1fr; */
     text-align: center;
     border-style: solid;
     border-width: 6px;
@@ -180,6 +251,14 @@ background-color: #369;
   text-indent: 5vw;
   font-size: 2.54829vmax;
   font-weight: 500; */
+}
+
+#content ul li {
+  color: RGB(73, 144, 219);
+  font-family: sans-serif;
+  font-size: 48px;
+  text-decoration-color: RGB(73, 144, 219);
+
 }
 
  .navbubbles {
@@ -223,7 +302,6 @@ background-color: #369;
 
 #page-wrap{
   border-color: rgb(4, 1, 32);
-
 }
 
 #content-wrap{
@@ -244,8 +322,10 @@ background-color: #369;
 #content h4 h3 h2 h1 p {
   text-align: center;
   text-decoration-color: #59556a;
-  /*#344583; */
 }
+
+
+
 
 
 
@@ -260,9 +340,52 @@ background-color: #369;
   border-bottom: .2vw solid;
 }
 
-#content {
+/*content header with glow display*/
 
+#glow  {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 53px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(14,62,94,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px rgba(0,21,255,1) , 0 0 70px #0033ff , 0 0 80px #0019ff , 0 0 100px #2e00ff ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+
+
+
+
+
+
+
+
+
+#glow:hover {
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+
+
+
+
+
+
+
+
 
 /*
 #content > div ul {
