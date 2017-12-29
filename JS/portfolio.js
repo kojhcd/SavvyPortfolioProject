@@ -30,3 +30,12 @@ $( "#contact" ).on( "click", ( event ) => {
     );
 }
 );
+
+
+$( "#firstcontact" ).on( "click", ( event ) => {
+    event.preventDefault();
+
+    $( "#content" ).html( " <p id='glow'> Contact Me ! = D </p>" + '<form action="https://formspree.io/kyleojennings@gmail.com" method="POST"><br><h2> You would like me to....</h2><label><input type="radio" name="subject" value="professional" checked><span> Build you a website! <br></span><input type="radio" name="subject" value="personal"><span>create your photography portfolio!</span><br></label><input type="text" name="firstname" placeholder="First Name" size="100" autofocus><input type="text" name="lastname" placeholder="Last Name" size="100"><br><input type="email" name="userEmail" placeholder="your.email@example.com"><br><input type="checkbox" name="optin" value="trusting" checked>Youd like me to give you a personal call<br><input type="checkbox" name="optout" value="skeptical" disabled>Your interested in professional services<br><label for="marketing"><br>How did you hear about me?</label><br><select name="marketing"><optgroup label="Online"><option value="social">Social Media (FB, Twitter, LinkedIn)</option><option value="github">Online Portfolio (GitHub)</option><option value="search">Search Engine</option><option value="email">Email</option></optgroup><optgroup label="In-Person"><option value="networking">I helped you change a tire at the auto parts store</option><option value="referral">You laughed at my joke in the coffee shop</option><option value="random">We met somewhere else</option></optgroup><option value="other">Other</option></select><br><textarea name="user_message" rows="8" cols="40"></textarea><br><input type="submit"></form>'
+    );
+}
+);
