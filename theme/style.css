@@ -36,7 +36,9 @@ a, b, body, div, form, h1, h3, h4, i, img, label, li, p, span, ul {
 }
 
 body {
-  background-color: RGB(168, 189, 217);
+  /*background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N'); */
+  background-image: url(https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N);
+  /*background-color: RGB(168, 189, 217); */ 
   /* */
 }
 
@@ -46,11 +48,11 @@ body {
 .spotlightmenu{
 width: 100%;
 overflow:hidden;
-background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N')
+background-image: url('https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N');
 }
 
 .spotlightmenu ul{
-background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N')
+
 margin: 0px;
 padding: 0px;
 font: bold 24px sans-serif; /* font style and size */
@@ -306,6 +308,7 @@ background-color: #369;
 
 #page-wrap{
   border-color: rgb(4, 1, 32);
+
 }
 
 #content-wrap{
@@ -319,14 +322,6 @@ background-color: #369;
 }
 
 
-
-
-
-
-
-
-
-
 #content {
   padding: 2.5vmax;
 }
@@ -336,10 +331,6 @@ background-color: #369;
   text-align: center;
   text-decoration-color: #59556a;
 }
-
-
-
-
 
 
 #content ul {
@@ -376,34 +367,12 @@ background-color: #369;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #glow:hover {
   font: normal 48px/normal "Warnes", Helvetica, sans-serif;
   color: rgba(255,255,255,1);
   text-decoration: normal;
   text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
 }
-
-
-
-
-
-
-
 
 
 

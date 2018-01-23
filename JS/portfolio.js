@@ -39,3 +39,12 @@ $( "#firstcontact" ).on( "click", ( event ) => {
     );
 }
 );
+
+/* this is the icon on the top that you see when you first get in there on the page */
+$( "#firstwebdesign" ).on( "click", ( event ) => {
+    event.preventDefault();
+
+    $( "#content" ).html( "<p id='glow'> My personal sites </p> <br>" + '<img src="https://drive.google.com/uc?export=view&id=19N2AXiMXOl3u3hly8iWgw7ee4237ep1D"/>' + '<img src="https://drive.google.com/uc?export=view&id=1o7dfKz6COfjtjYkNUGlpM0XJoHvNoXit">' + '<img src="https://drive.google.com/uc?export=view&id=1qyHsoFzZGGWti-F9IUz7iT9OmB2tAj2t"/>'
+    );
+}
+);
