@@ -40,6 +40,8 @@ body {
   background-image: url(https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N);
   /*background-color: RGB(168, 189, 217); */
   /* */
+   font-size: calc(16px + 1vw);
+  line-height: calc(1.1em + 0.5vw);
 }
 
 /* THIS IS THE END OF FONT / STYLING */
@@ -49,16 +51,40 @@ body {
  .banner {
     background-image: url("http://res.cloudinary.com/kodesign/image/upload/c_scale,e_blue:0,w_321/v1517505492/mobilebanner_sx8ng3.jpg");
     width: 120%;
-
   }
+  .spotlightmenu ul{
+  margin: 20px;
+  padding: 20px;
+  font: bold 3em
+  }
+  .fa {
+    color: white;
+  }
+  .desktop {
+    display: inline-flex;
+    justify-content: space-around;
+    }
 };
 
 @media all and (max-width: 599px){
   .banner {
      background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
      width: 80vw;
-
    }
+   .spotlightmenu ul{
+   margin: 20px;
+   padding: 20px;
+   font: bold 3em
+   }
+   .fa {
+     color: white;
+     font-size: 10vw;
+   }
+   .desktop {
+     display: inline-flex;
+     justify-content: flex-start;
+     padding-left: 3em;
+     }
 };
 @media all and (min-width: 600px) and (max-width:799px){
   .banner {
@@ -66,18 +92,38 @@ body {
      height: 100vw;
      width: 80vw;
    }
+   .spotlightmenu ul{
+   margin: 20px;
+   padding: 20px;
+   font: bold 3em
+   }
+   .fa {
+     color: white;
+        font-size: 10vw;
+   }
+   .desktop {
+     display: inline-flex;
+     justify-content: flex-start;
+     padding-left: 3em;
+     }
+
 };
 
-@media all and (min-width: 800px) and (max-width:1024px){
+@media all and (min-width: 700px) and (max-width:1024px){
+  .banner {
+     background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
+     height: 100vw;
+     width: 80vw;
 }
+.desktop {
+  display: inline-flex;
+  justify-content: flex-start;
+  padding-left: 3em;
+  }
+
 };
 
-@media all and (min-width: 700px) and (max-width: 1024px){
-
-}
-}; 
-@media all and (min-width: 1025px) and (max-width: 1399px){...}
-@media all and (min-width: 1400px){...}
+/* END MEDIA QUIERIES */
 
 .spotlightmenu{
 width: 100%;
@@ -85,11 +131,12 @@ overflow:hidden;
 background-image: url('https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N');
 }
 
+/
 .spotlightmenu ul{
 
-margin: 0px;
-padding: 0px;
-font: bold 24px sans-serif; /* font style and size */
+margin: 20px;
+padding: 20px;
+font: bold 10em sans-serif; /* font style and size */
 font-decoration-color: red;
 list-style-type: none;
 text-align: justify-all; /* "left", "center", or "right" align menu */
@@ -103,7 +150,6 @@ padding: 5px;
 margin: 0;
 margin-right: 100px; /* right margin between menu items */
 }
-
 
 .spotlightmenu li a{
 display:inline-block;
@@ -135,6 +181,10 @@ position:relative;
 top:35%; /* move text down so it appears centered within menu item */
 }
 
+@media only screen and (max-width: 414px) {
+
+}
+};
 
 /* Navigation */
 
