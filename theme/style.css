@@ -1,4 +1,11 @@
 
+/* SEARCH KBANNER ETC. FOR
+spotlightmenu
+DESKTOP
+NAVBUBBLES
+content
+DESKTOP < UL
+*/
 
 /* this is the style sheet for PORTFOLIO PROJECT */
 /* this is the style sheet for all docs in kylejennings */
@@ -26,14 +33,7 @@ RGB(204,204,204); light gray
 
 /* This is the end of the sane reset ------------------------------------------------ */
 
-a, b, body, div, form, h1, h3, h4, i, img, label, li, p, span, ul {
-  -webkit-font-smoothing: antialised;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
+
 
 body {
   /*background-image:url('https://drive.google.com/uc?export=view&id=id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N'); */
@@ -47,81 +47,129 @@ body {
 /* THIS IS THE END OF FONT / STYLING */
 /* beginning of experimental menu */
 
+h1 {
+  font-size: 5.9vw;
+}
+
+h2 {
+  font-size: 3.0vw;
+}
+
+p {
+  font-size: 2vw;
+}
+
+/* media queries begin
 @media only screen and (max-width: 414px)  {
+}
+
+@media all and (max-width: 599px){
+}
+
+@media all and (min-width: 600px) and (max-width:799px){
+}
+
+@media all and (min-width: 700px) and (max-width:1024px){
+}
+*/
+h1 {
+  font-size: 22px;
+}
+@media (min-width:576px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width:768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width:992px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+/* SPOTLIGHT MENU @media */
+
+  @media only screen and (max-width: 414px)  {
+
  .banner {
     background-image: url("http://res.cloudinary.com/kodesign/image/upload/c_scale,e_blue:0,w_321/v1517505492/mobilebanner_sx8ng3.jpg");
     width: 120%;
-  }
+  };
   .spotlightmenu ul{
   margin: 20px;
   padding: 20px;
   font: bold 3em
-  }
+};
   .fa {
     color: white;
-  }
+  };
   .desktop {
     display: inline-flex;
     justify-content: space-around;
-    }
-};
+  };
+}
 
 @media all and (max-width: 599px){
   .banner {
      background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
      width: 80vw;
-   }
+   };
    .spotlightmenu ul{
    margin: 20px;
    padding: 20px;
    font: bold 3em
-   }
+ };
    .fa {
      color: white;
      font-size: 10vw;
-   }
+   };
    .desktop {
      display: inline-flex;
      justify-content: flex-start;
      padding-left: 3em;
-     }
-};
+   };
+}
 @media all and (min-width: 600px) and (max-width:799px){
   .banner {
      background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
      height: 100vw;
      width: 80vw;
-   }
+   };
    .spotlightmenu ul{
    margin: 20px;
    padding: 20px;
-   font: bold 3em
-   }
+   font: bold 3em;
+ };
    .fa {
      color: white;
         font-size: 10vw;
-   }
+   };
    .desktop {
      display: inline-flex;
      justify-content: flex-start;
      padding-left: 3em;
-     }
+   };
 
-};
+}
 
 @media all and (min-width: 700px) and (max-width:1024px){
   .banner {
      background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
      height: 100vw;
      width: 80vw;
-}
-.desktop {
+};
+.desktop i {
+  width: 3vw;
+  height: 3vw;
   display: inline-flex;
   justify-content: flex-start;
   padding-left: 3em;
-  }
-
 };
+}
 
 /* END MEDIA QUIERIES */
 
@@ -134,9 +182,9 @@ background-image: url('https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4
 /
 .spotlightmenu ul{
 
-margin: 20px;
-padding: 20px;
-font: bold 10em sans-serif; /* font style and size */
+margin: 1vw;
+padding: 1vw;
+font: bold 3vw sans-serif; /* font style and size */
 font-decoration-color: red;
 list-style-type: none;
 text-align: justify-all; /* "left", "center", or "right" align menu */
@@ -181,73 +229,15 @@ position:relative;
 top:35%; /* move text down so it appears centered within menu item */
 }
 
-@media only screen and (max-width: 414px) {
-
-}
-};
-
-/* Navigation */
-
-.navigation {
-padding: 10px;
-background-color: RGB(168, 189, 217);
-}
-
-.navigation .dropdown {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin:0;
-  list-style-type: none;
-  background-color:
-    }
-
- /*.navigation .dropdown {
-list-style-type: none;
-position: absolute;
-top: 18px;
-right: -18px;
-padding: 10px;
-display: none;
-} */
-
-
-.navigation > ul {
-font-family: sans-serif;
-font-size: 2em;
-position: relative;
-list-style: none;
-display: inline;
-margin: 15px;
-}
-
-.navigation a:hover {
-  background-color: white;
-}
-
-
-.navigation .dropdown li {
-margin: 10px;
-}
-
-/* .navigation a:hover + .dropdown, .dropdown:hover {
-display: flex;
-}
-*/
-
-/* END Navigation */
-
-/* "JUMBOTRON" */
+/* BANNER */
 .banner {
     width: 100%;
     height: 40vw;
     background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
     @media queries
-    margin: 0 5px 0 5px;
+    margin: 0 .5vw 0 .5vw;
     background-size: cover;
-    border: 1px solid black;
+    border: .5vw solid blue;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -262,7 +252,7 @@ display: flex;
       height: 100vw;
       width: 100vw;
 
-   }
+   };
 };
 
 @media only screen and (max-width: 480px){
@@ -270,8 +260,23 @@ display: flex;
  .banner{
     background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
 
- }
+ };
 }
+
+
+/* BANNER @MEDIA */
+
+
+
+/* NAVBUBBLES */
+
+
+/* NAVBUBBLES @MEDIA */
+
+
+
+/* "JUMBOTRON" */
+
 
   /*
   background-image: url("https://drive.google.com/uc?export=view&id=1lIgI768s8UOjLtFyUAyGJxQdC2NOzgAr");
@@ -291,6 +296,10 @@ min-height: 100%
 }
 
 banner  .desktop ul li {
+  margin: 1vw;
+  padding: 1vw;
+  width: 3vw;
+  height: 3vw;
 
 }
 
@@ -376,7 +385,7 @@ form {
      display: table;
      table-layout: fixed;
      width: 100%;
-     max-width: 1500px;
+     max-width: 100%;
      margin: 0 auto;
      padding-bottom: 5px;
      padding-left: 0;
@@ -385,7 +394,7 @@ form {
    .navbubbles li {
      vertical-align: middle;
      display: table-cell;
-     font-size: 2.75vw;
+     font-size: \1.00vw;
      font-weight: 300;
    }
 
@@ -422,21 +431,85 @@ background-color: #369;
   border: .3vw  rgb(4, 1, 32);
   border-radius: 15px;
 }
+ @media only screen and (max-width: 414px)  {
+   #content-wrap {
+     width: 100vw;
+     height: 80vw;
+   }
+   #content {
+     width: 100vw;
+     height: 80vw;
+   }
+   #content img {
+     width: 100vw;
+    height: 80vw;
+  }
+}
 
+@media all and (max-width: 599px){
+  #content-wrap {
+    width: 100vw;
+    height: 0vw;
+  }
+  #content {
+    width: 100vw;
+    height: 60vw;
+  }
+  #content img {
+    width: 100vw;
+   height: 60vw;
+ }
+}
+
+@media all and (min-width: 600px) and (max-width:799px){
+  #content-wrap {
+    width: 100vw;
+    height: 80vw;
+  }
+  #content {
+    width: 100vw;
+    height: 80vw;
+  }
+  #content img {
+    width: 100vw;
+   height: 80vw;
+ }
+}
+
+@media all and (min-width: 700px) and (max-width:1024px){
+  #content-wrap {
+    width: 100vw;
+    height: 80vw;
+  }
+  #content {
+    width: 100%;
+    height: 100%;
+  }
+  #content img {
+    width: 100vw;
+   height: 80vw;
+ }
+}
 
 #content {
+  height: 100%;
+  width: 100%;
   padding: 2.5vmax;
+
 }
 
 
 #content h4 h3 h2 h1 p {
+  font-size: 3em;
   text-align: center;
   text-decoration-color: #59556a;
 }
 
 
-#content ul {
-  font-weight: 500;
+#content li {
+  height: 100%;
+  width: 100%
+  font-size: 3em;
   padding-left: 4vw;
   padding-top: 3vh;
   padding-bottom: 3vh;
