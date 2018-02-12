@@ -123,6 +123,9 @@ h1 {
    padding: 20px;
    font: bold 3em
  };
+ .spot-top{
+   color: white;
+ }
    .fa {
      color: white;
      font-size: 10vw;
@@ -132,6 +135,10 @@ h1 {
      justify-content: flex-start;
      padding-left: 3em;
    };
+   .navbubbles h4 {
+     flex-shrink: 4;
+     flex-wrap: wrap;
+   }
 }
 @media all and (min-width: 600px) and (max-width:799px){
   .banner {
@@ -144,6 +151,9 @@ h1 {
    padding: 20px;
    font: bold 3em;
  };
+ .spot-top{
+   color: white;
+ }
    .fa {
      color: white;
         font-size: 10vw;
@@ -177,6 +187,9 @@ h1 {
 width: 100%;
 overflow:hidden;
 background-image: url('https://drive.google.com/uc?export=view&id=1KvtIbFEhbtzM4kOGHZVpzcpvIR4lOj9N');
+}
+.spot-top{
+  color: white;
 }
 
 /
@@ -251,8 +264,10 @@ top:35%; /* move text down so it appears centered within menu item */
       background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
       height: 100vw;
       width: 100vw;
-
    };
+   .spot-top{
+     color: white;
+   }
 };
 
 @media only screen and (max-width: 480px){
@@ -261,6 +276,9 @@ top:35%; /* move text down so it appears centered within menu item */
     background-image: url("http://res.cloudinary.com/kodesign/image/upload/e_colorize:0,r_30/a_0/v1516990751/mobilebanner350_s7b12m.jpg");
 
  };
+ .spot-top{
+   color: white;
+ }
 }
 
 
@@ -346,6 +364,8 @@ form {
 }
 
 #content {
+  min-width: 80vw;
+  min-height: 80vw;
     text-align: center;
     border-style: solid;
     border-width: 6px;
@@ -354,6 +374,7 @@ form {
 }
 
 #content img {
+
   justify-content: center;
   padding: 10px;
   margin: 10px;
@@ -362,7 +383,7 @@ form {
 #content p {
   color: RGB(73, 144, 219);
   font-family: sans-serif;
-  font-size: 48px;
+  font-size: large;
   text-decoration-color: rgb(4, 1, 32);
 /*  line-height: 1.4;
   text-indent: 5vw;
@@ -422,7 +443,7 @@ background-color: #369;
 
 }
 
-#content-wrap{
+#content {
   width: 90%;
   max-width: 960px;
   margin-left: auto;
@@ -431,6 +452,11 @@ background-color: #369;
   border: .3vw  rgb(4, 1, 32);
   border-radius: 15px;
 }
+
+  #content img {
+    max-width: 80%;
+    max-height: 80%;
+  }
  @media only screen and (max-width: 414px)  {
    #content-wrap {
      width: 100vw;
@@ -475,10 +501,13 @@ background-color: #369;
    height: 80vw;
  }
 }
+#content p {
+  font-size: :large;
+}
 
 @media all and (min-width: 700px) and (max-width:1024px){
   #content-wrap {
-    width: 100vw;
+    width: 80vw;
     height: 80vw;
   }
   #content {
@@ -486,14 +515,14 @@ background-color: #369;
     height: 100%;
   }
   #content img {
-    width: 100vw;
+    width: 80vw;
    height: 80vw;
  }
 }
 
 #content {
-  height: 100%;
-  width: 100%;
+  height: 80vw;
+  width: 80vw;
   padding: 2.5vmax;
 
 }
@@ -518,6 +547,8 @@ background-color: #369;
 #content a {
   border-bottom: .2vw solid;
 }
+
+
 
 /*content header with glow display*/
 
