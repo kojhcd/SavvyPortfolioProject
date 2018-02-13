@@ -9,7 +9,7 @@ $( "#bio" ).on( "click", ( event ) => {
 $( "#resume" ).on( "click", ( event ) => {
     event.preventDefault();
 
-    $( "#content" ).html( '<p id="glow">  Professional Resume</p><br>' + '<a href="https://drive.google.com/open?id=0B49ZdIwG-YMOdGhXQnBBa20wUFU"><i class="fa fa-file-pdf-o fa-5x" aria-hidden="true"></i></a>' + "<ul><li><p> Strong command of browser development tools: HTML/CSS/Javascript; using best coding practices</p></li><br><li><p> Experienced building sites using responsive adaptive design in compliance with usability standards</p></li><br><li><p>Strong ability to work independently as well as part of a team</li><br> <li>Excellent interpersonal and public relations skills </p> </li></ul>"
+    $( "#content" ).html( '<p id="glow">  Professional Resume</p><br>' + '<a href="https://drive.google.com/open?id=0B49ZdIwG-YMOdGhXQnBBa20wUFU"><i class="fa fa-file-pdf-o fa-5x" aria-hidden="true"></i></a>' + "<ul><li><h1> Strong command of browser development tools: HTML/CSS/Javascript; using best coding practices</h1></li><br><li><h1> Experienced building sites using responsive adaptive design in compliance with usability standards</h1></li><br><li><h1>Strong ability to work independently as well as part of a team</h1></li><br> <li><h1>Excellent interpersonal and public relations skills </h1> </li></ul>"
     );
 }
 );
